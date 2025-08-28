@@ -22,8 +22,8 @@
       padding: 0;
     }
     #player-container {
-      width: 800px;
-      height: 600px;
+      width: 1080px;
+      height: 1920px;
       margin: 20px auto;
       border: 1px solid #555;
     }
@@ -35,12 +35,13 @@
   <script src="spine-player.js"></script>
   <script>
     new spine.SpinePlayer("player-container", {
-      jsonUrl: "HeroicDrugaCelin.json",
-      atlasUrl: "HeroicDrugaCelin.atlas",
+      jsonUrl: "ultraWin.json",
+      atlasUrl: "ultraWin.atlas",
       animation: "animation",
       alpha: true,
       backgroundColor: "#222222",
       showControls: true,
+      controlBones: ["Frame"],
       success: function (player) {
         console.log("Spine animation loaded!");
       }
